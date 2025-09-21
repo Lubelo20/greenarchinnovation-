@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | GreenArch Innovation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Projects.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="Index.html">
+                <img src="GreenArch_Logo.png"
+                    alt="GreenArch Logo" /></a>
+        </div>
+        <ul id="nav-menu">
+            <li><a href="Index.html">Home</a></li>
+            <li class="dropdown" id="about-dropdown">
+                <a href="#" id="about-btn" class="menu-btn">About Us<span class="arrow"></span></a>
+                <ul class="submenu">
+                    <li><a href="OurBusiness.html">Our Business</a></li>
+                    <li><a href="Founders.html">Founder</a></li>
+                    <li><a href="Blog.html">Blogs</a></li>
+                </ul>
+            </li>
+            <li><a href="Projects.html" class="active">Projects</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="ShopNow.html">Shop Now</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" id="mobile-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-title-row">
+                <h1>Projects</h1>
+            </div>
+            <p>
+                At GreenArch Innovation, we develop community-driven aquaculture and hydroponic farms that
+                empower youth, promote sustainability, and increase local food production.
+            </p>
+        </div>
+    </section>
+
+    <!FILTER SECTION WHICH WILL CONTAIN ALL PROJECTS>
+    <section class="filter-section">
+        <div class="filter-container">
+            <h2 style="color: #2d5a3d; margin-bottom: 1rem; font-size: 2rem;">Explore Our Impact</h2>
+            <p style="color: #666; margin-bottom: 2rem;">Select a category to view our innovative sustainable
+                agriculture projects</p>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="aquaculture">Aquaculture</button>
+                <button class="filter-btn" data-filter="aquaponics">Aquaponics</button>
+                <button class="filter-btn" data-filter="hydroponics">Hydroponics</button>
+                <button class="filter-btn" data-filter="all">View All</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-container">
+        <div class="projects-grid" id="aquaponics-projects">
+            <div class="project-card fade-in">
+                <div class="project-image"
+                    style="background-image: url('https://www.sagoodnews.co.za/wp-content/uploads/2025/03/Cala-Eastern-Cape-Engen-launch-Auaponics-Project-1-1536x681.jpg'); position:relative;">
+                    <img src="EngenLogo.png"alt="Engen Logo"
+                        style="position:absolute;bottom:10px;right:10px;width:60px;height:auto;background:#fff;border-radius:8px;padding:4px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">
+                        Aquaponics for Khanyisa Special School
+                        <span class="partner-badge">Engen</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Eastern Cape
+                        </div>
+                        <div class="project-status">
+                            <i class="fas fa-spinner"></i>
+                            Active
+                        </div>
+                    </div>
+                    <div class="project-desc">
+                        In partnership with Engen, we introduced a fully integrated aquaponics system at a special
+                        school in the Eastern Cape. This project empowers learners with disabilities by providing
+                        hands-on agricultural skills, fresh produce, and fish for nutrition, while promoting
+                        sustainability and inclusion.
+                    </div>
+                    <a href="Blog.html" class="read-more-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!AQUACULTURE PROJECTS>
+        <div class="projects-grid active" id="aquaculture-projects">
+            <div class="project-card fade-in">
+                <div class="project-image aquaculture-1"></div>
+                <div class="project-content">
+                    <div class="project-title">
+                        Tilapia Breeding Program
+                        <span class="partner-badge">AquaFarms Inc.</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            KwaZulu-Natal
+                        </div>
+                        <div class="project-status">
+                            <i class="fas fa-check-circle"></i>
+                            Completed
+                        </div>
+                    </div>
+                    <div class="project-desc">
+                        Developed a sustainable catfish breeding program in partnership with AquaFarms to boost
+                        local fish production and provide comprehensive training for youth in aquaculture management.
+                        The program has successfully increased local protein production by 300%.
+                    </div>
+                    <a href="Blog.html" class="read-more-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image aquaculture-2"></div>
+                <div class="project-content">
+                    <div class="project-title">
+                        Community Fish Farm
+                        <span class="partner-badge">Local Municipality</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Rural Mpumalanga
+                        </div>
+                        <div class="project-status">
+                            <i class="fas fa-spinner"></i>
+                            Active
+                        </div>
+                    </div>
+                    <div class="project-desc">
+                        Established a thriving community fish farm in partnership with the Local Municipality, providing
+                        fresh fish and sustainable employment opportunities for residents. The project has created 25
+                        direct jobs and supports over 100 families.
+                    </div>
+                    <a href="Blog.html" class="read-more-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!HYDROPONICS PROJECTS>
+        <div class="projects-grid" id="hydroponics-projects">
+            <div class="project-card fade-in">
+                <div class="project-image hydroponics-1"></div>
+                <div class="project-content">
+                    <div class="project-title">
+                        School Hydroponics Garden
+                        <span class="partner-badge">EduGrow</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Cape Town
+                        </div>
+                        <div class="project-status">
+                            <i class="fas fa-check-circle"></i>
+                            Completed
+                        </div>
+                    </div>
+                    <div class="project-desc">
+                        Launched an educational hydroponics garden at Sunrise Primary with EduGrow, teaching students
+                        about soilless farming and nutrition. The program has reached over 500 students and integrated
+                        STEM learning with sustainable agriculture practices.
+                    </div>
+                    <a href="Blog.html" class="read-more-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image hydroponics-2"></div>
+                <div class="project-content">
+                    <div class="project-title">
+                        Commercial Lettuce Farm
+                        <span class="partner-badge">FreshLeaf</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Western Cape
+                        </div>
+                        <div class="project-status">
+                            <i class="fas fa-spinner"></i>
+                            Active
+                        </div>
+                    </div>
+                    <div class="project-desc">
+                        Built a state-of-the-art commercial hydroponic lettuce farm with FreshLeaf, delivering
+                        high-yield, pesticide-free greens to local markets. The facility produces 2,000 kg of fresh
+                        lettuce monthly using 90% less water than traditional farming.
+                    </div>
+                    <a href="Blog.html" class="read-more-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!VIEW ALL THE PROJECTS>
+        <div class="projects-grid" id="all-projects">
+        </div>
+    </section>
+
+    <!FOOTER SECTION>
+    <div class="footer-section">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="Index.html"><i class="bi bi-arrow-right"></i>Home</a>
+                        <a href="OurBusiness.html"><i class="bi bi-arrow-right"></i>About Us</a>
+                        <a href="Services.html"><i class="bi bi-arrow-right"></i>Services</a>
+                        <a href="Contact.html"><i class="bi bi-arrow-right"></i>Contact</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Links</h3>
+                    <div class="footer-links">
+                        <a href="Projects.html"><i class="bi bi-arrow-right"></i>Aquaponics</a>
+                        <a href="Projects.html"><i class="bi bi-arrow-right"></i>Aquaculture</a>
+                        <a href="Projects.html"><i class="bi bi-arrow-right"></i>Hydroponics</a>
+                        <a href="https://shop.greenarchinnovation.co.za/store-manager/">
+                        <i class="bi bi-arrow-right"></i> Store Manager </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-info">
+                        <p><i class="bi bi-geo-alt"></i>Richards Bay, KwaZulu-Natal</p>
+                        <p><i class="bi bi-envelope-open"></i><a href="mailto:info@greenarchinnovatio.co.za">info@greenarchinnovation.co.za</a></p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-buttons">
+                        <a href="https://wa.me/qr/3EWDFKVB5TSOI1" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/@green_archofficial?_t=ZS-8zk7vjNTPng&_r=1 "class="social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=100093841367844&__cft__[0]=AZWrXgmWACapa6EnhH1773LRcXgovn-95sWjkObUKFoRcqLS4nzjaKr1z14BA2rvn-ayBySrDDjS_sYeWHIaj61Pm7OsPpTBlUZxXPVvngUevPpq-T6uuKj6rROGZBMYfQazxpm-Ib0_9Q0Dcl2swNrNtfo5KePmgX2vdZuSEfm_L6qOQdn3sgyzs8RJAJN6oxlNl2_jwld5kW9bZ3T15gCq&__cft__[1]=AZWrXgmWACapa6EnhH1773LRcXgovn-95sWjkObUKFoRcqLS4nzjaKr1z14BA2rvn-ayBySrDDjS_sYeWHIaj61Pm7OsPpTBlUZxXPVvngUevPpq-T6uuKj6rROGZBMYfQazxpm-Ib0_9Q0Dcl2swNrNtfo5KePmgX2vdZuSEfm_L6qOQdn3sgyzs8RJAJN6oxlNl2_jwld5kW9bZ3T15gCq&__tn__=-]H-R" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <p>&copy; 2025 Green Arch Innovation. All Rights Reserved.</p>
+            <p class="text-end">Designed by Asanda Shezi with care and sustainability</p>
+        </div>
+    </div>
+
+    <script>
+        
+        //FOR MOBILE USE- MENU TOGGLE WHICH CONTAINS THE NAVIGATION LINKS
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        mobileToggle.addEventListener('click', function () {
+            navMenu.classList.toggle('active');
+            const icon = mobileToggle.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // PROPER DROPDOWN FUNCTIONALITY
+        function setupDropdown(buttonId, dropdownId) {
+            const button = document.getElementById(buttonId);
+            const dropdown = document.getElementById(dropdownId);
+
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Close other dropdowns
+                document.querySelectorAll('.dropdown').forEach(d => {
+                    if (d !== dropdown) d.classList.remove('active');
+                });
+                dropdown.classList.toggle('active');
+            });
+        }
+        setupDropdown('about-btn', 'about-dropdown');
+
+        // 
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+
+        // FOR MOBILE USE-WHEN CLICKING ONE NAVIGATION LINK, THE MENU AUTOMATICALLY CLOSES
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', function () {
+                navMenu.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // FILTER BUTTONS AND PROJECT DISPLAY (AQUAPONICS, AQUACULTURE, HYDROPONICS, VIEW ALL PROJECTS )
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectGrids = document.querySelectorAll('.projects-grid');
+
+        function showProjects(category) {
+            projectGrids.forEach(grid => grid.classList.remove('active'));
+            if (category === 'all') {
+                const allProjectsGrid = document.getElementById('all-projects');
+                allProjectsGrid.innerHTML = '';
+                projectGrids.forEach(grid => {
+                    if (grid.id !== 'all-projects') {
+                        grid.querySelectorAll('.project-card').forEach(card => {
+                            allProjectsGrid.appendChild(card.cloneNode(true));
+                        });
+                    }
+                });
+                allProjectsGrid.classList.add('active');
+            } else {
+                const targetGrid = document.getElementById(`${category}-projects`);
+                if (targetGrid) targetGrid.classList.add('active');
+            }
+            filterButtons.forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.filter === category);
+            });
+            // Animate visible cards
+            const visibleCards = document.querySelectorAll('.projects-grid.active .project-card');
+            visibleCards.forEach((card, index) => {
+                setTimeout(() => card.classList.add('visible'), index * 100);
+            });
+        }
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', function () {
+                showProjects(this.dataset.filter);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            showProjects('aquaculture');
+            // Animate on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('visible');
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+            document.querySelectorAll('.project-card').forEach(card => observer.observe(card));
+        });
+    </script>
+</body>
+
+
+</html>
